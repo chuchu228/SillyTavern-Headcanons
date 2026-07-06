@@ -1,0 +1,119 @@
+/* =========================
+   SEND PANEL BUTTON
+========================= */
+
+#hc-send-btn {
+    transition: all 0.15s ease;
+    border-radius: 6px;
+}
+
+#hc-send-btn:hover {
+    background: rgba(124, 92, 255, 0.15);
+    transform: scale(1.1);
+}
+
+#hc-send-btn:active {
+    transform: scale(0.95);
+}
+
+/* =========================
+   POPUP (MENU)
+========================= */
+
+#hc-popup {
+    position: fixed;
+    right: 20px;
+    bottom: 120px;
+
+    width: 280px;
+
+    background: var(--SmartThemeBlurBg, var(--background-color, #1e1e1e));
+    color: var(--text-color, #ffffff);
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 99999;
+
+    font-family: var(--mainFont, sans-serif);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+#hc-popup > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+#hc-popup button {
+    background: var(--ac-style-color, #7c5cff);
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 6px 10px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    margin-right: 6px;
+
+    transition: 0.15s ease;
+}
+
+#hc-popup button:hover {
+    filter: brightness(1.1);
+}
+
+#hc-popup button:active {
+    transform: scale(0.97);
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+#hc-close {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.15s ease;
+}
+
+#hc-close:hover {
+    opacity: 1;
+}
+
+/* =========================
+   DARK / LIGHT COMPAT
+========================= */
+
+@media (prefers-color-scheme: light) {
+    #hc-popup {
+        background: #ffffff;
+        color: #111;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #hc-popup button {
+        color: white;
+    }
+}
