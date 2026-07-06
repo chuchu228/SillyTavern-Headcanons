@@ -1,12 +1,8 @@
 {
+  "name": "headcanons",
   "display_name": "Headcanons",
-  "loading_order": 10,
-  "requires": [],
-  "optional": [],
-  "js": "index.js",
-  "css": "style.css",
-  "author": "st-headcanons",
   "version": "1.0.0",
-  "auto_update": false,
-  "entry_point": "index.js"
+  "author": "st-headcanons",
+  "js": "index.js",
+  "css": "style.css"
 }
